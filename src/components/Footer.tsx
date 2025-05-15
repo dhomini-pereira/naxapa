@@ -63,7 +63,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} NAXAPA. Todos os direitos reservados.
           </p>
           <p className="text-gray-400 text-sm flex items-center mt-4 md:mt-0">
-            Feito com <Heart size={16} className="mx-1 text-red-500" /> em São Paulo
+            Feito com <Heart size={16} className="mx-1 text-red-500" /> por Dhomini Pereira
           </p>
         </div>
       </div>
