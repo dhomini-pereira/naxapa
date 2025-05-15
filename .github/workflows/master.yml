@@ -1,7 +1,10 @@
+name: Deploy to Cloudflare Pages
+
 on:
   push:
     branches:
       - master
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -11,16 +14,15 @@ jobs:
     name: Deploy to Cloudflare Pages
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - name: Build
+        uses: actions/checkout@v4
+
+      - name: Install dependencies and build
         run: npm install && npm run build
-      - name: Publish
-        uses: cloudflare/pages-action@v1
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: ${{ secrets.PROJECT_NAME }}
-          directory: ${{ secrets.PROJECT_BUILD }}
-          gitHubToken: ${{ secrets.GIT_TOKEN }}
-          production: true
-          branch: main
+          command: pages deploy ${{ secrets.PROJECT_BUILD }} --project-name=${{ secrets.PROJECT_NAME }} --branch=main
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
