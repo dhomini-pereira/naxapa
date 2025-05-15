@@ -1,10 +1,9 @@
-import React from 'react';
 import { MapPin, Clock, Phone, MessageSquare } from 'lucide-react';
 
 const hoursOfOperation = [
-  { day: 'Segunda - Quinta', hours: '11:00 - 21:00' },
-  { day: 'Sexta - Sábado', hours: '11:00 - 23:00' },
-  { day: 'Domingo', hours: '12:00 - 20:00' },
+  { day: 'Segunda - Quinta', hours: '18:00 - 00:00' },
+  { day: 'Sexta - Sábado', hours: '18:00 - 00:00' },
+  { day: 'Domingo', hours: '18:00 - 00:00' },
 ];
 
 const Contact = () => {
@@ -38,7 +37,7 @@ const Contact = () => {
               </div>
               <div className="flex items-center mb-2">
                 <Phone className="text-orange-600 mr-2 flex-shrink-0" />
-                <p className="text-gray-300">(11) 99999-9999</p>
+                <p className="text-gray-300">(21) 97604-2292</p>
               </div>
             </div>
 
@@ -58,7 +57,7 @@ const Contact = () => {
             <h3 className="text-xl font-bold mb-3 text-white">Peça Agora</h3>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20na%20NAXAPA."
+                href="https://wa.me/5521976042292?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full font-medium transition-all duration-300 flex items-center justify-center"

@@ -13,22 +13,10 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.instagram.com/naxapa2025"
                 className="text-gray-400 hover:text-orange-400 transition-colors"
               >
                 <Instagram size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-orange-400 transition-colors"
-              >
-                <Facebook size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-orange-400 transition-colors"
-              >
-                <Twitter size={20} />
               </a>
             </div>
           </div>
