@@ -64,12 +64,6 @@ const Contact = () => {
               >
                 <MessageSquare size={18} className="mr-2" /> WhatsApp
               </a>
-              <a
-                href="#"
-                className="bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded-full font-medium transition-all duration-300 flex items-center justify-center"
-              >
-                iFood
-              </a>
             </div>
           </div>
 

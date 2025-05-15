@@ -17,7 +17,7 @@ const Hero = () => {
       >
         <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
           O Sabor de Verdade é <br className="hidden md:block" />
-          <span className="text-orange-600">na NAXAPA!</span>
+          <span className="text-orange-600">NAXAPA!</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-2xl">
           Os lanches mais suculentos e o melhor atendimento da cidade. 

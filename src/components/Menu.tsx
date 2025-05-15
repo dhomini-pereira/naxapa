@@ -1,9 +1,10 @@
 import { useState } from "react";
 import MenuCategory from "./MenuCategory";
 import { menuCategories } from "../data/menuData";
+import "../styles/menu.css";
 
 const Menu = () => {
-  const [activeCategory, setActiveCategory] = useState("Burgers");
+  const [activeCategory, setActiveCategory] = useState("Hambúrgueres");
 
   return (
     <section id="menu" className="py-20 px-4">
@@ -16,7 +17,7 @@ const Menu = () => {
           </p>
         </div>
 
-        <div className="flex mb-8 gap-4 pb-2 w-full overflow-x-auto py-4 px-2">
+        <div className="menuuu flex mb-8 gap-4 pb-2 w-full overflow-x-auto py-4 px-2">
           {menuCategories.map((category) => (
             <button
               key={category.name}

@@ -1,10 +1,10 @@
-import { Heart, Instagram, Facebook, Twitter } from "lucide-react";
+import { Heart, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-10">
       <div className="container mx-auto px-4 w-full">
-        <div className="flex flex-cols md:flex-row gap-8 mb-8">
+        <div className="flex flex-col md:items-center md:flex-row justify-between gap-8 mb-8">
           <div>
             <h3 className="text-xl font-bold mb-4 text-orange-400">NAXAPA</h3>
             <p className="text-gray-400 mb-4">
@@ -39,6 +39,9 @@ const Footer = () => {
                 )
               )}
             </ul>
+          </div>
+          <div>
+            <img src="/assets/logo.png" alt="logo" style={{ maxWidth: "100%", width: '30%' }}/>
           </div>
         </div>
 

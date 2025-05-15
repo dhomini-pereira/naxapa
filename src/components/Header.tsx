@@ -31,7 +31,7 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#" className="text-2xl font-bold text-orange-600">
+        <a href="#" className="text-2xl font-bold text-orange-600 flex flex-row">
           NAXAPA
         </a>
         
