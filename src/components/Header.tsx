@@ -21,8 +21,8 @@ const Header = () => {
     };
   }, []);
 
-  const menuItems = ['Início', 'Cardápio', 'Sobre', 'Galeria', 'Contato'];
-  const menuLinks = ['home', 'menu', 'about', 'gallery', 'contact'];
+  const menuItems = ['Início', 'Cardápio', 'Galeria', 'Contato'];
+  const menuLinks = ['home', 'menu', 'gallery', 'contact'];
 
   return (
     <header 
