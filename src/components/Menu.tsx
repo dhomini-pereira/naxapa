@@ -16,8 +16,7 @@ const Menu = () => {
             sobremesas, há algo para todos
           </p>
         </div>
-
-        <div className="menuuu flex mb-8 gap-4 pb-2 w-full overflow-x-auto py-4 px-2">
+        <div className="flex flex-wrap justify-center mb-8 gap-4 pb-2 w-full overflow-x-auto py-4 px-2">
           {menuCategories.map((category) => (
             <button
               key={category.name}
